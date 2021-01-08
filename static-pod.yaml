@@ -6,6 +6,7 @@ spec:
   containers:
     - name: web
       image: nginx
+      imagePullPolicy: Never
       ports:
         - name: web
           containerPort: 80
