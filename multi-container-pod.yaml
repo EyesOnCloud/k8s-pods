@@ -6,7 +6,10 @@ spec:
   containers:
   - name: container1
     image: nginx
+    imagePullPolicy: Never
   - name: container2
     image: redis
+    imagePullPolicy: Never
   - name: container3
     image: memcached
+    imagePullPolicy: Never
