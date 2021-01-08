@@ -6,6 +6,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
+    imagePullPolicy: Never
     ports:
     - containerPort: 80
     volumeMounts:
@@ -15,6 +16,7 @@ spec:
   initContainers:
   - name: install
     image: busybox
+    imagePullPolicy: Never
     command:
     - wget
     - "-O"
