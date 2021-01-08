@@ -5,4 +5,5 @@ metadata:
 spec:
   containers:
   - name: mynginx
-    image: nginx:latest
+    image: nginx
+    imagePullPolicy: Never
