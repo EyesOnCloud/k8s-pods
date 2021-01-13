@@ -6,4 +6,3 @@ spec:
   containers:
   - name: mynginx
     image: nginx
-    imagePullPolicy: Never
